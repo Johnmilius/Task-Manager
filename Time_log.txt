@@ -51,9 +51,9 @@ Setting up the presentation for Wednesdays meeting.
 
 |9/29/2025 |2:00      |TP      |                                            |1:00         |
 
+|9/30/2025 |3:00      |IM      |                                            |             |
 
-
-|          |          |        |                                            |             |
+Worked on menu for the main project and set up a couple functions to hepl make the program work. 
 
 _Note: Add more rows as needed._
 
