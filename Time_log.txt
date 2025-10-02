@@ -56,6 +56,8 @@ Setting up the presentation for Wednesdays meeting.
 Worked on menu for the main project and set up a couple functions to help make the program work.
 Add_task function, and user menu. 
 
+|10/1/2025 |7:11      |IM      |                                            |             |
+
 _Note: Add more rows as needed._
 
 ## Sprint Totals

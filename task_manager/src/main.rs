@@ -1,29 +1,9 @@
-use std::{io::{self, Write}, path::PrefixComponent};
+use crate::operations::*;
+use crate::task::Task;
+use std::io::{self, Write};
 
-//working on complete task function
-
-struct Task {
-    id: u32,
-    description: String,
-    completed: bool,
-}
-
-impl Task {
-    // This is like a constructor
-    fn new(id: u32, description: String) -> Task {
-        Task {
-            id,
-            description,
-            completed: false, // Default to false
-        }
-    }
-}
-
-fn add_task(tasks: &mut Vec<Task>, new_task: Task) {
-    tasks.push(new_task);
-}
-
-fn complete_task(){}
+mod operations;
+mod task;
 
 fn main() {
     let mut running = true;
@@ -33,7 +13,7 @@ fn main() {
 
     while running {
         print!(
-            "Menu:\n   a) Add Task\n   d) Delete Task\n   c) Complete Task\n   v) View Tasks\n   e) Exit Program\n   > "
+            "Menu:\n   a) Add Task\n   c) Complete Task\n   v) View Tasks\n   e) Exit Program\n   > "
         );
         io::stdout().flush().expect("Failed to flush stdout");
 
@@ -42,41 +22,58 @@ fn main() {
             .read_line(&mut input)
             .expect("Failed to read the line.");
 
-        let input = input.trim();
+        let input = input.trim().to_lowercase();
+        match input.as_str() {
+            "a" => {
+                println!("");
+                print!("What is the task you wish to add?\n   > ");
+                io::stdout().flush().expect("Failed to flush stdout");
 
-        if input == "a" {
-            println!("");
-            print!("What is the task you wish to add?\n   > ");
-            io::stdout().flush().expect("Failed to flush stdout");
+                let mut new_description = String::new();
+                io::stdin()
+                    .read_line(&mut new_description)
+                    .expect("Failed to read line.");
 
-            let mut new_Description = String::new();
-            io::stdin()
-                .read_line(&mut new_Description)
-                .expect("Failed to read line.");
+                let new_description = new_description.trim().to_string();
+                let id = tasks.len() as u32 + 1;
+                let new_task = Task::new(id, new_description);
 
-            let new_Decription = new_Description.trim().to_string();
-            let id = tasks.len() as u32 + 1;
-            let new_task = Task::new(id,new_Description);            
-
-            add_task(&mut tasks, new_task);
-
-            println!("New Task Created Successfully");
-
-        } else if input == "d" {
-            // May be complicated due to the incrementing id 
-        } else if input == "c" {
-            
-        } else if input == "v" {
-            println!("\nAll Tasks:");
-            for task in &tasks{
-                print!("Task: {}, {}", task.id, task.description);
+                add_task(&mut tasks, new_task);
+                println!("New Task Created Successfully");
             }
-            println!("");
-        } else if input == "e" {
-            println!("GoodBye!");
-            break;
-        } else {
-            println!("Invalid Input try again.")
+            "c" => {
+                println!("Which task would you like to mark as completed?");
+
+                display_all_tasks(&tasks);
+
+                print!("  > ");
+                io::stdout().flush().expect("Failed to flush stdout");
+
+                // Reads the user input
+                let mut id_input = String::new();
+                io::stdin()
+                    .read_line(&mut id_input)
+                    .expect("Failed to read the line.");
+
+                let id_input = id_input
+                    .trim()
+                    .parse::<u32>()
+                    .expect("Failed to parse Int. Try Again.");
+
+                //Sends input into the function
+                complete_task(&mut tasks, id_input);
+                println!("Task, {},  has been set to completed.", id_input);
+            }
+            "v" => {
+                display_all_tasks(&tasks);
+            }
+            "e" => {
+                println!("GoodBye!");
+                break;
+            }
+            _ => {
+                println!("Invalid Input try again.")
+            }
         }
     }
 
