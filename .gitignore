@@ -8,6 +8,7 @@ Cargo.lock
 .idea/
 *.swp
 *.swo
+*~
 
 # OS generated files
 .DS_Store
@@ -21,6 +22,8 @@ Thumbs.db
 # Windows
 *.tmp
 *.temp
+desktop.ini
 
-# Debug files
-*.pdb
+# Task files (optional - you might want to keep these)
+# *.json
+# tasks.json

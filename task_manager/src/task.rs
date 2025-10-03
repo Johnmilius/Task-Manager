@@ -1,3 +1,6 @@
+use serde::{Deserialize, Serialize};
+
+#[derive(Serialize, Deserialize, Debug, Clone)] // Add Serialize and Deserialize
 pub struct Task {
     pub id: u32,
     pub description: String,

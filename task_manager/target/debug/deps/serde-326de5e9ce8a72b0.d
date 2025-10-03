@@ -1,0 +1,12 @@
+C:\Users\jwmil\OneDrive\Desktop\BYU-I Fall 2025\Task-Manager-Rust---Copy\task_manager\target\debug\deps\serde-326de5e9ce8a72b0.d: C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\jwmil\OneDrive\Desktop\BYU-I\ Fall\ 2025\Task-Manager-Rust---Copy\task_manager\target\debug\build\serde-100ae2e227551a10\out/private.rs
+
+C:\Users\jwmil\OneDrive\Desktop\BYU-I Fall 2025\Task-Manager-Rust---Copy\task_manager\target\debug\deps\libserde-326de5e9ce8a72b0.rmeta: C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs C:\Users\jwmil\OneDrive\Desktop\BYU-I\ Fall\ 2025\Task-Manager-Rust---Copy\task_manager\target\debug\build\serde-100ae2e227551a10\out/private.rs
+
+C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\jwmil\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+C:\Users\jwmil\OneDrive\Desktop\BYU-I\ Fall\ 2025\Task-Manager-Rust---Copy\task_manager\target\debug\build\serde-100ae2e227551a10\out/private.rs:
+
+# env-dep:OUT_DIR=C:\\Users\\jwmil\\OneDrive\\Desktop\\BYU-I Fall 2025\\Task-Manager-Rust---Copy\\task_manager\\target\\debug\\build\\serde-100ae2e227551a10\\out

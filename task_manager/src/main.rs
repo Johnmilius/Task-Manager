@@ -1,9 +1,11 @@
 use crate::operations::*;
 use crate::task::Task;
 use std::io::{self, Write};
+use crate::filereader::*;
 
 mod operations;
 mod task;
+mod filereader;
 
 fn main() {
     let mut running = true;
@@ -13,7 +15,7 @@ fn main() {
 
     while running {
         print!(
-            "Menu:\n   a) Add Task\n   c) Complete Task\n   v) View Tasks\n   e) Exit Program\n   > "
+            "Menu:\n   a) Add Task\n   c) Complete Task\n   v) View Tasks\n   e) Exit Program\n   l) Load File\n   s) Save File\n   > "
         );
         io::stdout().flush().expect("Failed to flush stdout");
 
@@ -71,19 +73,29 @@ fn main() {
                 println!("GoodBye!");
                 break;
             }
+            "l" => {
+                print!("What is the name of your file?\n   > ");
+                io::stdout().flush().expect("Failed to flush stdout");
+
+                let mut filename: String = String::new();
+
+                io::stdin()
+                    .read_line(&mut filename)
+                    .expect("Failed to read the line.");
+
+                match load_tasks(&filename) {
+                    Ok(loaded_tasks) => {
+                        tasks = loaded_tasks;
+                        println!("Tasks loaded successfully from {}!", filename);
+                    }
+                    Err(e) => {
+                        println!("Failed to load tasks: {}", e);
+                    }
+                }
+            }
             _ => {
                 println!("Invalid Input try again.")
             }
         }
     }
-
-    // Create tasks using the constructor:
-    // let task1 = Task::new(1, "Clean the Dishes".to_string());
-    // let task2 = Task::new(2, "Buy groceries".to_string());
-    // let task3 = Task::new(3, "Finish Rust homework".to_string());
-
-    // // Add tasks to the vector using our add_task function
-    // add_task(&mut tasks, task1);
-    // add_task(&mut tasks, task2);
-    // add_task(&mut tasks, task3);
 }
