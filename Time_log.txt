@@ -77,7 +77,8 @@ The expected minimum amount of time each Sprint for each category is as follows:
 
 |10/3/2025 |8:17     | IM     |                                            | 1:30          |
 
-
+    Finished up the program with the save and load functions.
+    Wrapped up the Readme and made sure everything was good for the sprint. 
 
 
 _Note: Add more rows as needed._

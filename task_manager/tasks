@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "description": "Do the dishes",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "description": "Take out the Garbage",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "description": "do the laundry",
+    "completed": true
+  },
+  {
+    "id": 4,
+    "description": "mop the floors",
+    "completed": false
+  }
+]

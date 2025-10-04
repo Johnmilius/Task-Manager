@@ -1,19 +1,17 @@
+use crate::filereader::*;
 use crate::operations::*;
 use crate::task::Task;
 use std::io::{self, Write};
-use crate::filereader::*;
 
+mod filereader;
 mod operations;
 mod task;
-mod filereader;
 
 fn main() {
-    let mut running = true;
     // Create an empty vector to store tasks
-
     let mut tasks: Vec<Task> = vec![];
 
-    while running {
+    loop {
         print!(
             "Menu:\n   a) Add Task\n   c) Complete Task\n   v) View Tasks\n   e) Exit Program\n   l) Load File\n   s) Save File\n   > "
         );
@@ -74,7 +72,7 @@ fn main() {
                 break;
             }
             "l" => {
-                print!("What is the name of your file?\n   > ");
+                print!("What is the name of your file you wish to load?\n   > ");
                 io::stdout().flush().expect("Failed to flush stdout");
 
                 let mut filename: String = String::new();
@@ -83,6 +81,8 @@ fn main() {
                     .read_line(&mut filename)
                     .expect("Failed to read the line.");
 
+                let filename = filename.trim();
+
                 match load_tasks(&filename) {
                     Ok(loaded_tasks) => {
                         tasks = loaded_tasks;
@@ -90,6 +90,27 @@ fn main() {
                     }
                     Err(e) => {
                         println!("Failed to load tasks: {}", e);
+                    }
+                }
+            }
+            "s" => {
+                print!("What is the name of your file you wish to save to?\n   > ");
+                io::stdout().flush().expect("Failed to flush stdout");
+
+                let mut filename: String = String::new();
+
+                io::stdin()
+                    .read_line(&mut filename)
+                    .expect("Failed to read the line.");
+
+                let filename = filename.trim();
+
+                match save_tasks(&tasks, &filename) {
+                    Ok(_) => {
+                        println!("File Saved Successfully.");
+                    }
+                    Err(e) => {
+                        println!("Failed to save tasks: {}", e);
                     }
                 }
             }
