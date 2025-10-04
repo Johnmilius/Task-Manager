@@ -60,7 +60,7 @@ The expected minimum amount of time each Sprint for each category is as follows:
     Worked on menu for the main project and set up a couple functions to help make the program work.
     Add_task function, and user menu. 
 
-|9/22/2025 |2:00      | MTG    |                                            | 1:00        |
+10/1/2025 |2:00      | MTG    |                                            | 1:00        |
 
     Class Group Project Presentation.
 
@@ -69,11 +69,16 @@ The expected minimum amount of time each Sprint for each category is as follows:
     Finished the functions and modulized the main into 3 seperate files. Main, Task, and Operators.
     Had to learn how to import with rust sytnax and common practice relating to that. 
 
-|10/2/2025 |10:40     | IM     |                                            |             |
+|10/2/2025 |10:40     | IM     |                                            | 1:00        |
 
     Spent time organizing / polishing the code. 
     Started adding a file write system to save data and read data from program run to program run.
     Tried learning more about the stack vs heap with pointers and boxes.
+
+|10/3/2025 |8:17     | IM     |                                            | 1:30          |
+
+
+
 
 _Note: Add more rows as needed._
 
