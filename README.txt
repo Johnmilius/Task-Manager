@@ -9,13 +9,12 @@ It is simple to use so it doesn't asbtract from the simplicity of doing tasks.
 
 Steps to build and/or run the software:
 
-1. 
-2. 
-3. 
+1. Use the command Cargo build to compile. 
+2. To run the software do Cargo run the software is Cargo Run in the terminal. Ensure you are in the task_manager folder.
 
 Instructions for using the software:
 
-1. simply in the terminal makes sure you cd to task_manager folder or else it won't run.
+1. cd to task_manager folder or else it won't run.
 2. Once there in the terminal run the command cargo run. The programs menu should be view able from there. 
 3. To load a file enter l and add the file name. No need to add the .json file string attached to it. the file should be inserted into the task_manager folder. 
 
@@ -23,17 +22,15 @@ Instructions for using the software:
 
 To recreate the development environment, you need the following software and/or libraries with the specified versions:
 
-* First thing here
-* 
-*
-
+* **Rust** - Download from https://rust-lang.org/tools/install/ (use the x64 version for Windows)
+* **Visual Studio Code** (recommended IDE)
+* **Rust Bundle Extension** - Install from https://marketplace.visualstudio.com/items?itemName=1YiB.rust-bundle
 ## Useful Websites to Learn More
 
 I found these websites useful in developing this software:
 
 * I used interactive AI chats to learn the syntax. Going from how to construct an if statement to more complicated things like file writing and saving. 
 * Used a couple videos to learn about why I should use rust and the benefits of it over other languages linked below 
-* 
 
 ## Future Work
 

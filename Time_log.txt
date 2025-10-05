@@ -55,6 +55,8 @@ The expected minimum amount of time each Sprint for each category is as follows:
 
 |9/29/2025 |2:00      |TP      |                                            |1:00         |
 
+    Team class cordination. Setting up assignments.
+
 |9/30/2025 |3:00      |IM      |                                            |1:30         |
 
     Worked on menu for the main project and set up a couple functions to help make the program work.
@@ -79,6 +81,18 @@ The expected minimum amount of time each Sprint for each category is as follows:
 
     Finished up the program with the save and load functions.
     Wrapped up the Readme and made sure everything was good for the sprint. 
+
+|10/4/2025 |8:00     | IM     |                                            | 1:00          |
+
+    Demonstrated my code with my dad and walked him through it. 
+    He asked me questions about it / tested my knowledge.
+    Worked on Readme
+
+|10/4/2025 |9:00     | TP     |                                            | 1:00          |
+
+    My dad showed me his react native project he did for fun a few months ago. 
+    And I explored a little bit more into some react native hello world stuff. 
+
 
 
 _Note: Add more rows as needed._
